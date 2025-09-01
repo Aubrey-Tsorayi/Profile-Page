@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #1976d2;
+    padding: 0.5em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+section {
+    max-width: 700px;
+    margin: 2em auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 2em;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+}
+
+#home img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1976d2;
+}
+
+#home p {
+    font-size: 1.2em;
+    color: #222;
+    margin: 0;
+}
+
+#about h1,
+#skills h1,
+#contact h1 {
+    color: #1976d2;
+    margin-bottom: 0.5em;
+}
+
+#about p {
+    color: #444;
+    font-size: 1.1em;
+}
+
+/* Skills section horizontal layout */
+#skills ul {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+    margin: 0;
+}
+
+#skills li {
+    font-size: 1.05em;
+    color: #1976d2;
+    margin-bottom: 0;
+    background: #e3f2fd;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+}
+
+#contact p {
+    color: #444;
+    font-size: 1.05em;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+#contact button {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#contact button:hover {
+    background: #1565c0;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #222;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    margin-top: 2em;
+}
+
+.profile-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 3px solid #e0e0e0;
+}
+
+.profile-name {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.profile-bio {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.profile-details {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+.profile-details li {
+    font-size: 0.98em;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.profile-actions button,
+.profile-actions a {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.profile-actions button:hover,
+.profile-actions a:hover {
+    background: #1565c0;
+}

@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Profile Page</title>
 </head>
 <body>
     <nav>
-        
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
+    <section id="home">
+        <img src="bio.jpg" alt="Home Image">
+        <p>My name is Tutsirayi Tsorayi. I am a web developer.</p>
+    </section>
+    <section id="about">
+        <h1>About Me</h1>
+        <p>I am a passionate web developer with experience in creating dynamic and responsive websites. I enjoy working with the latest web technologies and frameworks.</p>
+    </section>
+    <section id="skills">
+        <h1>My Skills</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Next.js</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form action="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Tutsirayi Tsorayi. All rights reserved.</p>
+    </footer>
 </body>
 </html>
