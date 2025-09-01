@@ -11,12 +11,15 @@ A simple web project for creating and displaying user profile information.
 - Back to Top button for easy navigation
 - Toggle visibility of About Me and Skills sections by clicking their headings
 - JavaScript form validation for the contact form
+ - Tailwind CSS for modern utility-first styling
+ - Improved responsiveness for all devices
 
 ## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
+ - Tailwind CSS (via CDN)
 
 ## Getting Started
 
@@ -25,6 +28,12 @@ A simple web project for creating and displaying user profile information.
     git clone <repository-url>
     ```
 2. Open `index.html` in your browser.
+
+## Styling & Responsiveness
+
+The project now uses [Tailwind CSS](https://tailwindcss.com/) for all styling. All layout, color, spacing, and responsive features are implemented using Tailwind utility classes. No custom CSS is required.
+
+All sections and components are fully responsive and adapt to mobile, tablet, and desktop screens.
 
 ## Usage
 
