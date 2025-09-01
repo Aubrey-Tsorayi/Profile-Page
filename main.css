@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-    background: #1976d2;
+    background: #d32f2f;
     padding: 0.5em 0;
     position: sticky;
     top: 0;
@@ -34,7 +34,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffeb3b;
+    color: #ffcdd2;
 }
 
 section {
@@ -58,7 +58,7 @@ section {
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #1976d2;
+    border: 3px solid #d2192f;
 }
 
 #home p {
@@ -70,7 +70,7 @@ section {
 #about h1,
 #skills h1,
 #contact h1 {
-    color: #1976d2;
+    color: #d32f2f;
     margin-bottom: 0.5em;
 }
 
@@ -91,11 +91,27 @@ section {
 
 #skills li {
     font-size: 1.05em;
-    color: #1976d2;
+    color: #d32f2f;
     margin-bottom: 0;
-    background: #e3f2fd;
+    background: #ffcdd2;
     padding: 0.5em 1em;
     border-radius: 6px;
+}
+
+/* Make skills scrollable on small screens */
+@media (max-width: 600px) {
+    #skills ul {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 1em;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    scrollbar-color: #d32f2f #ffcdd2;
+    }
+    #skills li {
+        min-width: 120px;
+        flex: 0 0 auto;
+    }
 }
 
 #contact p {
@@ -121,7 +137,7 @@ section {
 }
 
 #contact button {
-    background: #1976d2;
+    background: #d32f2f;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -132,7 +148,7 @@ section {
 }
 
 #contact button:hover {
-    background: #1565c0;
+    background: #b71c1c;
 }
 
 footer {
@@ -194,9 +210,10 @@ footer {
     gap: 12px;
 }
 
+
 .profile-actions button,
 .profile-actions a {
-    background: #1976d2;
+    background: #d32f2f;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -209,5 +226,5 @@ footer {
 
 .profile-actions button:hover,
 .profile-actions a:hover {
-    background: #1565c0;
+    background: #b71c1c;
 }
